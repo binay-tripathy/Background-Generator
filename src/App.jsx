@@ -1,12 +1,17 @@
+import { Routes, Route } from 'react-router-dom';
 import './App.scss';
-import Header from './components/Header/Header';
 import Navbar from './components/Navbar/Navbar';
+import Static from './components/Static/Static';
+import Gradient from './components/Gradient/Gradient';
 
 function App() {
   return (
     <>
-    <Header/>
-    <Navbar/>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Static />} />
+        <Route path='gradient' element={<Gradient />} />
+      </Routes>
     </>
   );
 }
