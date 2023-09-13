@@ -2,15 +2,20 @@ import React from 'react'
 import './Static.scss'
 
 const Static = () => {
-  const temp = (e) => {
-    console.log(e.target.value);
+  const color = (e) => {
+    document.getElementById('backsolid').style.background = e.target.value;
   }
+  
   return (
+    <>
     <div className="colorInput">
-      <label htmlFor="color1"> Select the color : </label>
-      <input type="color" name="color1" id="color1" onChange={temp} />
+      <label htmlFor="color"> Select the color : </label>
+      <input type="color" name="color" id="color" onChange={color} />
       <span id="colorValue"></span>
     </div>
+    <div id='backsolid'>
+    </div>
+    </>
   )
 }
 
