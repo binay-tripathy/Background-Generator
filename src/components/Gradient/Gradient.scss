@@ -1,0 +1,43 @@
+.colorInputg {
+    background: gray;
+    min-height: 70px;
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    input,
+    label {
+      cursor: pointer;
+      transform: translateY(18%);
+    }
+    label {
+      margin-right: 2rem;
+      font-size: 20px;
+      font-weight: 600;
+      transform: translateY(-5%);
+    }
+    input[type="color"] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      &::-webkit-color-swatch {
+        border-radius: 5px;
+        border: none;
+      }
+      &::-moz-color-swatch {
+        border-radius: 5px;
+        border: none;
+      }
+      
+    }
+  }
+  #backsolid{
+      height: 100%;
+      width: 100%;
+      position:fixed;
+  }
