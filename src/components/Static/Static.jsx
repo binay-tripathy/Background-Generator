@@ -6,16 +6,16 @@ const Static = () => {
     console.log(e.target.value)
     document.getElementById('backsolid').style.background = e.target.value;
   }
-  
+
   return (
     <>
-    <div className="colorInputs">
-      <label htmlFor="color"> Select the color : </label>
-      <input type="color" name="color" id="color" defaultValue={'#ffffff'} onChange={color} />
-      <span id="colorValue"></span>
-    </div>
-    <div id='backsolid'>
-    </div>
+      <div className="colorInputs">
+        <label htmlFor="color"> Select the color : </label>
+        <input type="color" name="color" id="color" defaultValue={'#ffffff'} onChange={color} />
+        <span id="colorValue"></span>
+      </div>
+      <div id='backsolid'>
+      </div>
     </>
   )
 }
