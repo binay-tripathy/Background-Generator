@@ -39,4 +39,28 @@
   height: 100%;
   width: 100%;
   position: fixed;
+  .text {
+    position: absolute;
+    border: transparent;
+    bottom: 18rem;
+    right: 3rem;
+    height: 50px;
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(109, 216, 216);
+    align-items: center;
+    border-radius: 25px;
+    h6{
+      padding-top: 8px;
+      font-weight: 600;
+      font-size: large;
+    }
+    #faicon {
+      padding: 5px;
+      font-size: medium;
+      border-radius: 50%;
+      background-color: white;
+    }
+  }
 }
