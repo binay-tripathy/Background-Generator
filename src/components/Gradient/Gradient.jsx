@@ -6,7 +6,7 @@ import { faCode } from '@fortawesome/free-solid-svg-icons'
 const Gradient = () => {
   const [g1, setG1] = useState('#ffffff');
   const [g2, setG2] = useState('#ffffff');
-  const [bgText, setBgText] = useState('linear-gradient(to right, #ffffff, #ffffff)');
+  // const [bgText, setBgText] = useState('linear-gradient(to right, #ffffff, #ffffff)');
 
   useEffect(() => {
     const bgcolor = `linear-gradient(to right, ${g1}, ${g2})`;
@@ -35,10 +35,10 @@ const Gradient = () => {
 
       </div>
       <div id='backgradient'>
-        <button className="text">
-        <h6>Get the Code !!</h6>
-          <FontAwesomeIcon icon={faCode} beat size="xs" id='faicon' />
-        </button>
+      <button className="text">
+                <h6>Get the Code !!</h6>
+                <FontAwesomeIcon icon={faCode} beat size="xs" id='faicon' />
+            </button>
       </div>
     </>
 

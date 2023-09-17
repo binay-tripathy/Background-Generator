@@ -2,6 +2,7 @@ import React from 'react'
 import './Navbar.scss'
 import { NavLink } from 'react-router-dom'
 
+
 const Navbar = () => {
     return (
         <>
@@ -18,6 +19,7 @@ const Navbar = () => {
                     </NavLink>
                 </nav>
             </div>
+            
         </>
     )
 }

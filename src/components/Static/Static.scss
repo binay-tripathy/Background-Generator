@@ -31,11 +31,51 @@
       border-radius: 5px;
       border: none;
     }
-    
   }
 }
-#backsolid{
-    height: 100%;
+#backsolid {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+#facross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-weight: 800;
+}
+.popUp{
+  border-radius: 10%;
+}
+.moda {
+  font-size: 12px;
+  .header {
     width: 100%;
-    position:fixed;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px 5px;
+  }
+  .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
 }
