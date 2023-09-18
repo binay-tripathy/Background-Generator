@@ -58,4 +58,35 @@ h1{
     background-color: white;
   }
 }
-
+.popUp-content{
+  border-radius: 10px;
+  animation: zoomInUp 1s 0s forwards;
+}
+.moda {
+  font-size: 12px;
+  .content {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 5px;
+  }
+  .actions {
+    width: 100%;
+    padding: 10px 5px;
+    margin: auto;
+    text-align: center;
+  }
+  .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+}

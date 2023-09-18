@@ -1,17 +1,20 @@
 import React, { useEffect, useState } from 'react'
 import './Gradient.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode } from '@fortawesome/free-solid-svg-icons'
+import { faArrowRight, faCode } from '@fortawesome/free-solid-svg-icons'
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 const Gradient = () => {
-  const [g1, setG1] = useState('#ffffff');
-  const [g2, setG2] = useState('#ffffff');
-  // const [bgText, setBgText] = useState('linear-gradient(to right, #ffffff, #ffffff)');
+  const [g1, setG1] = useState('#DA8A49');
+  const [g2, setG2] = useState('#8A8CCC');
+  const [bgText, setBgText] = useState('linear-gradient(to right, #DA8A49, #8A8CCC)');
 
   useEffect(() => {
-    const bgcolor = `linear-gradient(to right, ${g1}, ${g2})`;
-    document.getElementById('backgradient').style.background = bgcolor;
-  }, [g1, g2])
+    // const bgcolor = `linear-gradient(to right, ${g1}, ${g2})`;
+    setBgText(`linear-gradient(to right, ${g1}, ${g2})`)
+    document.getElementById('backgradient').style.background = bgText;
+  }, [bgText, g1, g2])
 
   const color1 = (e) => {
     setG1(e.target.value);
@@ -35,10 +38,20 @@ const Gradient = () => {
 
       </div>
       <div id='backgradient'>
-      <button className="text">
-                <h6>Get the Code !!</h6>
-                <FontAwesomeIcon icon={faCode} beat size="xs" id='faicon' />
-            </button>
+        <Popup className='popUp' trigger={<button className="text"> <h6>Get the Code !!</h6> <FontAwesomeIcon icon={faCode} beat size="xs" id='faicon' /></button>} modal>
+          {close => (
+            <div className="moda">
+              <button className="close" onClick={close}> &times; </button>
+              <div className="content">
+              CSS &nbsp;<FontAwesomeIcon size="xs" icon={faArrowRight} /> &nbsp;&nbsp;&nbsp; background-color : {bgText}
+              </div>
+              <div className="actions">
+                <button className="button" onClick={() => { close(); }}> CLOSE </button>
+              </div>
+            </div>
+          )}
+        </Popup>
+
       </div>
     </>
 
