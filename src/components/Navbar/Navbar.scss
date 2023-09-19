@@ -29,7 +29,9 @@ h1{
       text-decoration: none;
     }
     a.active {
+      padding: 0 20px;
       background: #414040;
+      background-clip: padding-box;
       color: #ffffff;
     }
   }
@@ -58,6 +60,17 @@ h1{
     background-color: white;
   }
 }
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}
 .popUp-content{
   border-radius: 10px;
   animation: zoomInUp 1s 0s forwards;
@@ -75,6 +88,13 @@ h1{
     padding: 10px 5px;
     margin: auto;
     text-align: center;
+    button{
+      border-radius: 5px;
+      background-color: gray;
+      &:hover{
+        background-color: lightgray;
+      }
+    }
   }
   .close {
     cursor: pointer;

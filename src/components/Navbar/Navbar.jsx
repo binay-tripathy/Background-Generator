@@ -19,6 +19,9 @@ const Navbar = () => {
                     </NavLink>
                 </nav>
             </div>
+            <div className="footer">
+                <a href="http://github.com/binay-tripathy" target="_blank" rel="noopener noreferrer">Made with 🤍 by Binay Tripathy</a>
+            </div>
             
         </>
     )
